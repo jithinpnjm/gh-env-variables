@@ -6,7 +6,8 @@ on:
       - dev
 env:
   PORT: 8080
-  DB_NAME: jithin-db      
+  DB_NAME: jithin-db  
+  DB_USERNAME: ${{ secrets.GITHUB_TOKEN }}    
 jobs:
   test:
     env:
